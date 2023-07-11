@@ -41,6 +41,11 @@ export default function Home() {
           onChange={(e) => handleFilterBySearch(e.target.value)}
         />
       </div>
+
+      <h1 className="text-2xl md:text-3xl text-center font-bold text-gray-600 my-4">
+        Filter by category
+      </h1>
+
       {currentSearch.length === 0 && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-8">
           <CategoryCards
